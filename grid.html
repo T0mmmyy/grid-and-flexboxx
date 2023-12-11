@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="grid.css">
     <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            /* grid-template-columns: min-content 2fr 100px;
+            grid-template-columns: max-content 2fr 100px;
+            grid-template-columns: fit-content(300px) 2fr 100px;
+            grid-template-columns: minmax(100px, 300px) 2fr 100px; */
+            /* grid-template-columns: repeat(auto-fill, 100px); */
+            /* grid-template-columns: repeat(auto-fit, 100px); */
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
 </head>
 <body>
+    
     <div class="grid">
         <div class="grid_item">1</div>
         <div class="grid_item">2</div>
