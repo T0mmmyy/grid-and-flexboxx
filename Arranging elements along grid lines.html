@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Arranging elements along grid lines.css">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+        .grid_item:nth-child(3) {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row: 2 / 4;
+        }
+        .grid_item:nth-child(1) {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+        .grid_item:nth-child(2) {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="grid_item">1</div>
+        <div class="grid_item">2</div>
+        <div class="grid_item">3</div>
+    </div>
+</body>
+</html>
